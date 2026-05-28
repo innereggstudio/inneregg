@@ -1,0 +1,53 @@
+export default function InnerEggHome() {
+  return (
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_#f7f3f0,_#eef2f5_45%,_#f3edeb_100%)] flex flex-col items-center justify-center px-6 text-neutral-900">
+      {/* Logo */}
+      <div className="mb-14 flex flex-col items-center">
+        <div className="relative h-20 w-20">
+          {/* egg outline */}
+          <div className="absolute inset-x-2 top-0 h-14 rounded-[50%_50%_46%_46%/60%_60%_40%_40%] border-[2px] border-neutral-900" />
+
+          {/* cube perspective */}
+          <div className="absolute left-[14px] top-[26px] h-10 w-10 border-[1.6px] border-neutral-900 [transform:skewY(-8deg)]" />
+          <div className="absolute left-[24px] top-[26px] h-10 w-10 border-[1.2px] border-neutral-900/40 [transform:skewY(-8deg)]" />
+
+          {/* gold energy line */}
+          <div className="absolute left-[16px] top-[36px] h-[2px] w-[48px] rounded-full bg-gradient-to-r from-[#c9a73a] via-[#e4c86e] to-[#c9a73a]" />
+        </div>
+
+        <div className="mt-4 text-sm tracking-[0.18em]">INNEREGG</div>
+        <div className="text-xs text-neutral-500">把情绪放进容器，而不是倒向别人</div>
+      </div>
+
+      {/* Main Trash Container */}
+      <div className="w-full max-w-xl rounded-[36px] border border-black/10 bg-white/60 p-8 backdrop-blur-xl shadow-[0_20px_70px_rgba(0,0,0,0.06)]">
+        <div className="text-center mb-6">
+          <div className="text-xl font-medium">把情绪丢进这里</div>
+          <div className="text-sm text-neutral-500 mt-1">可以打字，也可以说出来</div>
+        </div>
+
+        {/* text input */}
+        <textarea
+          className="w-full h-32 resize-none rounded-[26px] border border-black/10 bg-white/80 p-5 outline-none placeholder:text-neutral-400"
+          placeholder="现在最想说的一句话…"
+        />
+
+        {/* voice button */}
+        <div className="flex items-center justify-between mt-5">
+          <button className="flex items-center gap-2 text-sm text-neutral-600">
+            🎤 语音输入
+          </button>
+
+          <button className="rounded-full bg-neutral-900 px-6 py-3 text-sm text-white hover:opacity-90">
+            丢进去
+          </button>
+        </div>
+      </div>
+
+      {/* subtle hint for next step */}
+      <div className="mt-10 text-xs text-neutral-400">
+        当情绪被释放后，系统会提供更多处理方式
+      </div>
+    </div>
+  );
+}
