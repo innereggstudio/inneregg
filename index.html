@@ -5,247 +5,205 @@
 
 <meta charset="UTF-8">
 
-<title>InnerEgg｜疗愈蛋 · Find Yourself</title>
+<title>InnerEgg｜疗愈蛋 Find Yourself</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <style>
 
-*{
-    box-sizing:border-box;
-}
-
 
 body{
 
-    margin:0;
+margin:0;
 
-    min-height:100vh;
+font-family:
+"Noto Serif SC",
+serif;
 
-    display:flex;
+background:
+linear-gradient(
+180deg,
+#faf7f0,
+#e9f0e6
+);
 
-    justify-content:center;
-
-    align-items:center;
-
-    font-family:
-    "Noto Serif SC",
-    "Microsoft YaHei",
-    serif;
-
-    background:
-    linear-gradient(
-    135deg,
-    #f5efe6,
-    #e8eee5,
-    #f7f3ed
-    );
-
-    color:#333;
+color:#333;
 
 }
 
 
-/* 主容器 */
 
-.container{
+header{
 
-    width:90%;
+text-align:center;
 
-    max-width:700px;
-
-    text-align:center;
+padding:60px 20px;
 
 }
 
-
-/* Logo */
 
 .logo{
 
-    width:180px;
-
-    margin-bottom:30px;
+width:180px;
 
 }
 
 
-/* 标题 */
-
 h1{
 
-    font-size:42px;
+font-size:42px;
 
-    letter-spacing:6px;
+font-weight:400;
 
-    font-weight:400;
-
-    margin:10px;
+letter-spacing:5px;
 
 }
 
 
 .subtitle{
 
-    font-size:18px;
+color:#777;
 
-    color:#777;
-
-    letter-spacing:2px;
-
-    margin-bottom:40px;
+letter-spacing:3px;
 
 }
 
 
-/* 介绍 */
 
-.intro{
 
-    background:
-    rgba(255,255,255,0.55);
 
-    padding:30px;
+section{
 
-    border-radius:30px;
+max-width:900px;
 
-    backdrop-filter:blur(10px);
+margin:40px auto;
 
-    box-shadow:
-    0 20px 50px rgba(0,0,0,0.08);
+padding:35px;
 
-    line-height:2;
+background:
+rgba(255,255,255,.65);
 
-    margin-bottom:30px;
+border-radius:35px;
 
 }
 
 
-/* 输入区域 */
+
+h2{
+
+font-weight:400;
+
+font-size:28px;
+
+}
+
+
+
+
 
 textarea{
 
-    width:100%;
+width:90%;
 
-    height:130px;
+height:120px;
 
-    border:none;
+border-radius:25px;
 
-    border-radius:25px;
+border:none;
 
-    padding:20px;
+padding:20px;
 
-    font-size:16px;
-
-    resize:none;
+font-size:16px;
 
 }
 
 
-textarea:focus{
 
-    outline:none;
-
-}
-
-
-/* 按钮 */
 
 button{
 
-    margin-top:20px;
+margin-top:20px;
 
-    width:100%;
+padding:15px 40px;
 
-    padding:15px;
+border-radius:30px;
 
-    border:none;
+border:none;
 
-    border-radius:25px;
+background:#364034;
 
-    background:#3d4035;
+color:white;
 
-    color:white;
-
-    font-size:16px;
+font-size:16px;
 
 }
 
 
-/* 三个入口 */
 
+.cards{
 
-.menu{
+display:flex;
 
-    display:flex;
-
-    gap:15px;
-
-    margin-top:35px;
+gap:20px;
 
 }
+
 
 
 .card{
 
-    flex:1;
+flex:1;
 
-    background:
-    rgba(255,255,255,0.5);
+padding:30px;
 
-    padding:20px 10px;
+background:white;
 
-    border-radius:25px;
+border-radius:25px;
 
-    font-size:15px;
-
-}
-
-
-/* 底部 */
-
-.footer{
-
-    margin-top:35px;
-
-    font-size:13px;
-
-    color:#888;
+text-align:center;
 
 }
 
 
-@media(max-width:600px){
 
-.menu{
+a{
+
+text-decoration:none;
+
+color:#333;
+
+}
+
+
+
+@media(max-width:700px){
+
+.cards{
 
 flex-direction:column;
 
 }
 
-
-h1{
-
-font-size:32px;
-
 }
 
-}
 
 
 </style>
 
+
 </head>
+
 
 
 <body>
 
 
-<div class="container">
+
+<header>
 
 
-<img class="logo" src="logo.png">
+<img class="logo" src="images/logo.png">
 
 
 <h1>
@@ -260,92 +218,178 @@ Find Yourself
 </div>
 
 
+</header>
 
-<div class="intro">
 
-一个温暖、安全的空间。
 
-<br>
 
-让情绪停靠，让内心被看见。
+<section>
 
-<br><br>
 
-Every feeling deserves a place to rest.
+<h2>
+🥚 情绪容器 Emotion Egg
+</h2>
 
-</div>
 
+<p>
+写下此刻的情绪
+</p>
 
 
 <textarea placeholder="
-把此刻的感受写下来……
-这里没有评判
+把你的感受放进蛋里……
 "></textarea>
 
+
+<br>
 
 
 <button>
 
-释放情绪
+释放
 
 </button>
 
 
+<p>
 
-<div class="menu">
+你的情绪已经被温柔接纳
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🌱 不一样的蛋世界
+</h2>
+
+
+
+<div class="cards">
 
 
 <div class="card">
 
-🌱
-
-<br>
-
-情绪空间
-
-</div>
-
-
-
-<div class="card">
+<a href="stories/index.html">
 
 📖
 
 <br>
 
-绘本故事
+绘本
+
+</a>
 
 </div>
+
 
 
 
 <div class="card">
 
-🌙
+<a href="stories/story01.html">
+
+🥚
 
 <br>
 
-心灵启发
+蛋的故事
+
+</a>
 
 </div>
 
 
-</div>
 
 
+<div class="card">
 
-<div class="footer">
+🛍
 
-You are safe here.
 <br>
 
-No judgment.
+蛋的产品
 
 </div>
 
 
 
 </div>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2>
+
+🈶 灵性汉字
+
+</h2>
+
+
+<p>
+
+繁体字探索
+
+<br><br>
+
+字形 · 解构 · 文化意义 · 心灵启发
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2>
+
+🌍 关于 InnerEgg
+
+</h2>
+
+
+<p>
+
+InnerEgg 是一个寻找内在自己的空间。
+
+<br><br>
+
+Find Yourself
+
+<br>
+
+找回内在自己。
+
+</p>
+
+
+</section>
+
+
 
 
 </body>
